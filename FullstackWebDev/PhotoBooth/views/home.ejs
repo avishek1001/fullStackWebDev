@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Photobooth</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>PhotoBooth</h1>
+        </div>
+        <div>
+            <form action="">
+                <button>Upload</button>
+            </form>
+        </div>
+
+    </nav>
+
+    <div id="list">
+        <ol>
+            <% for (let i of info) { %>
+                <li><a href="/<%=i.username%>"><%= i.username %></a></li>
+            <% } %>
+        </ol>
+    </div>
+</body>
+</html>

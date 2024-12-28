@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: yellow;
+    height: 400px;
+    width: 1000px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#container div {
+    height: 500px;
+    width: 500px;
+}

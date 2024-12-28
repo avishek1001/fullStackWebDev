@@ -1,0 +1,24 @@
+
+
+
+.p {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px dashed black;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+    margin: 20px;
+    
+    
+}
+
+img {
+    
+    width: 480px;
+    height: 460px;
+}
+
+
+

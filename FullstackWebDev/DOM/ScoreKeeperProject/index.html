@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper</title>
+</head>
+
+<body>
+    <section>
+        <div id="imgDiv">
+            <img src="https://www.advancedsciencenews.com/wp-content/uploads/2021/08/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
+                alt="ping pong">
+        </div>
+
+        <div id="name">
+            <h1>Ping pong score keeper</h1>
+        </div>
+
+        <div id="score">
+            <p id="liveScore"><b><span id="p1Score">0</span> to <span id="p2Score">0</span></b></p>
+            <p>Use the buttons below to keep score.</p>
+            <p>
+                <label for="range"><b>Playing to</b></label>
+                <select name="range" id="range">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </p>
+        </div>
+
+        <div id="buttonDiv">
+            <button style="background-color:aqua" id="p1">+1 Player 1</button>
+            <button style="background-color:aquamarine" id="p2">+1 Player 2</button>
+            <button style="background-color: pink;" id="reset">Reset</button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

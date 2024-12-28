@@ -1,0 +1,70 @@
+body {
+    background-color: #252422;
+    color: #eb5e28;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #eb5e28;
+}
+
+button {
+    font-size: 30px;
+    background-color: #ccc5b9;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: #ccc5b9;
+}
+
+#signup {
+    background-color: #eb5e28;
+}
+
+.tag {
+    color: #fffcf2;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #eb5e28;
+}
+
+li a {
+    text-decoration: none;
+    color: #ccc5b9;
+}
+
+p + h3 {
+    color:aqua;
+}
+
+footer > a {
+    color: red;
+}
+
+/* Attribute selector*/
+input[type="text"] {
+    background-color: skyblue;
+    color: red;
+    height: 30px;
+}
+
+/* pseudo class */
+
+a:hover {
+    color: white;
+}
+
+/* pseudo elements */
+
+p::first-line{
+    color:aquamarine;
+}
+
+p::selection {
+    background-color: black;
+}
+
+button:hover {
+    background-color: white;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/hellow">
+        <p>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" placeholder="username">
+        </p>
+        <input type="password" placeholder="password">
+        <input type="color">
+        <input type="number" placeholder="0" min="0" max="10" value="3">
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <h2>Checkbox</h2>
+
+    <div>
+        <label for="cheese">Do you like cheese?</label>
+        <input type="checkbox" id="cheese">
+    </div>
+
+    <h3>Radio Buttons</h3>
+    <form action="/fish">
+        <p>
+            <input type="radio" id="q1" name="question">
+            <label for="q1">call</label>
+        </p>
+        <p><input type="radio" id="q2" name="question">
+            <label for="q2">text</label>
+        </p>
+    </form>
+
+    <h3>Selects</h3>
+
+    <form action="">
+        <label for="meal">Please select an Entree</label>
+        <select name="meal" id="meal">
+            <option value="">Select an Entree</option>
+            <option value="Bread">Bread</option>
+            <option value="Tea">Tea</option>
+            <option value="Coffee">Coffee</option>
+        </select>
+    </form>
+
+    <h3>Range</h3>
+
+    <form action="">
+        <label for="cheese">Cheese Level</label>
+        <input type="range" id="cheese" min="1" max="11" value="1">
+    </form>
+
+    <h3>Validations</h3>
+
+    <form action="/hello">
+        <label for="user">Username</label>
+        <input type="text" placeholder="username" id="user" required>
+        <br>
+        <button>Submit</button>
+    </form>
+
+
+</body>
+
+</html>

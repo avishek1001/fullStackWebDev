@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+
+
+
+#container {
+    width: 400px;
+    height: 150px;
+    background-color: #dde5b6;
+    border: 3px solid #a98467;
+    border-radius: 1em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+#container section {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#container section:nth-of-type(3) {
+    justify-content: space-evenly;
+}
+
+input {
+    border: .2em solid #a98467;
+    border-radius: .5em;
+}
+
+#container section:nth-of-type(3) div button {
+    width: 10em;
+    height: 2em;
+    border-style: none;
+    border: .2em solid #a98467;
+    border-radius: .5em;
+    background-color: #f0ead2;
+    font-weight: 700;
+}

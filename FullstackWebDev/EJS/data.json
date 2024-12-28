@@ -1,0 +1,68 @@
+{
+    "technology": {
+        "topic": "Technology",
+        "description": "The latest technology news and discussions.",
+        "subscribers": 123,
+        "posts": [
+            {
+                "title": "Latest Tech Innovations",
+                "author": "tech_guru",
+                "image": "https://collectionperformance.com/wp-content/uploads/elementor/thumbs/DALL%C2%B7E-2024-03-24-15.30.31-Create-a-simple-and-clean-image-that-represents-futuristic-technology-trends-in-2024-focusing-on-minimalism-and-clarity.-The-image-should-subtly-inco-qlp3w2pcjdmuini9u2w9th5rlx34jkr8j0gfohj4ts.webp"
+            },
+            {
+                "title": "AI in 2024",
+                "author": "ai_expert",
+                "image": "https://example.com/ai_2024.jpg"
+            },
+            {
+                "title": "Future of Quantum Computing",
+                "author": "quantum_wizard",
+                "image": "https://example.com/quantum_computing.jpg"
+            }
+        ]
+    },
+    "science": {
+        "topic": "Science",
+        "description": "A place to share and discuss scientific research.",
+        "subscribers": 456,
+        "posts": [
+            {
+                "title": "New Discoveries in Space",
+                "author": "astro_fan",
+                "image": "https://example.com/space_discovery.jpg"
+            },
+            {
+                "title": "Climate Change Effects",
+                "author": "eco_warrior",
+                "image": "https://example.com/climate_change.jpg"
+            },
+            {
+                "title": "Breakthroughs in Medicine",
+                "author": "med_researcher",
+                "image": "https://example.com/medicine_breakthrough.jpg"
+            }
+        ]
+    },
+    "gaming": {
+        "topic": "Gaming",
+        "description": "All about video games and gaming culture.",
+        "subscribers": 789,
+        "posts": [
+            {
+                "title": "Top Games of 2024",
+                "author": "game_master",
+                "image": "https://example.com/top_games_2024.jpg"
+            },
+            {
+                "title": "VR Gaming Trends",
+                "author": "vr_enthusiast",
+                "image": "https://example.com/vr_gaming.jpg"
+            },
+            {
+                "title": "Indie Games Spotlight",
+                "author": "indie_dev",
+                "image": "https://example.com/indie_games.jpg"
+            }
+        ]
+    }
+}

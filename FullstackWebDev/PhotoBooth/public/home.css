@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #D9DBBC;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: #198754;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+nav div button {
+    border: 3px solid rosybrown;
+    width: 6rem;
+    height: 2rem;
+}

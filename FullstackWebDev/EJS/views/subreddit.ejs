@@ -1,0 +1,15 @@
+<%- include('partials/head') %>     <!--the header part is written in head.ejs in partial folder. It can be used as a template. this is known as ejs partials-->
+<body>
+    <h1><%= `Welcome to ${topic} subreddit`%></h1>
+    <h2>Post's titles</h2>
+    <ul>
+        <% for (let post of posts){ %>
+            <li>
+                <%= post.title %>
+                <img src=<%= post.image %> alt="">
+            </li>
+        <% } %>
+    </ul>
+
+</body>
+</html>
