@@ -2,20 +2,59 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #D9DBBC;
+    width: 100%;
     margin: 0;
+    align-items: center;
 }
 
 nav {
     display: flex;
+    width: 100%;
     background-color: #198754;
     align-items: center;
     justify-content: space-between;
-    padding-left: 3rem;
-    padding-right: 3rem;
 }
+
+nav div {
+    width: 50%;
+}
+
+nav div:nth-of-type(1){
+    text-align: start;
+    margin-left: 3rem;
+}
+
+nav div:nth-of-type(2){
+    text-align: end;
+    margin-right: 3rem;
+}
+
+nav h1 {
+    color: white;
+    
+}
+
 
 nav div button {
     border: 3px solid rosybrown;
     width: 6rem;
     height: 2rem;
+}
+
+#list {
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 1rem;
+    width: 20rem;
+    margin-top: 3rem;
+}
+
+#list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#list ul li a {
+    text-decoration: none;
 }

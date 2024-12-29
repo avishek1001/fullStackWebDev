@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/display.css">
+    <title><%= userInfo.username %></title>
+</head>
+<body>
+    <nav>
+        <h1><a href="/"><%= userInfo.username %></a></h1>
+    </nav>
+
+    <div id="imgSection">
+        <div>
+            <img src="<%= userInfo.img %>" alt="pics">
+        </div>
+        <div id="commentList">
+            <% try { %>
+                <% for (let c of userInfo.comments) { %>
+                    <div>
+                        <p>
+                            <%= c %>
+                        </p>
+                    </div>
+                <% } %>
+            <% } catch { %>
+                <div>
+                    <p>
+                        Add Comments
+                    </p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <div id="comment">
+        <form action="/r/<%= userInfo.username %>" method="POST">
+            <textarea name="comment" id="text" rows="2"></textarea>
+            <button>Comment</button>
+        </form>
+    </div>
+</body>
+</html>
