@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+const methodOverride = require('method-override');
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
@@ -42,6 +44,17 @@ app.post('/r/:username', (req, res) => {
     const {comment} = req.body;
     const userInfo = info.find(c => c.username === username);
     userInfo.comments.push(comment);
+    console.log(req.body);
+    res.redirect(`/r/${username}`);
+})
+
+app.delete('/r/:username', (req, res) => {
+    const {username} = req.params;
+    let userInfo = info.find(c => c.username === username);
+    if(userInfo) {
+        userInfo = userInfo.comments.filter(c => c !== req.body.comments);
+    }
+    //console.log(req.body);
     res.redirect(`/r/${username}`);
 })
 

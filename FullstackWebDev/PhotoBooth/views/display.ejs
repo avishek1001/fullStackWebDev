@@ -19,9 +19,17 @@
             <% try { %>
                 <% for (let c of userInfo.comments) { %>
                     <div>
-                        <p>
-                            <%= c %>
-                        </p>
+                        <div>
+                            <p>
+                                <%= c %>
+                            </p>
+                        </div>
+                        <div>
+                            <form method='POST' action="/r/<%= userInfo.username %>?_method=DELETE">
+                                <input type="hidden" name="comments" value="<%= c %>">
+                                <button>Delete</button>
+                            </form>
+                        </div>
                     </div>
                 <% } %>
             <% } catch { %>
@@ -31,6 +39,7 @@
                     </p>
                 </div>
             <% } %>
+
         </div>
     </div>
 
